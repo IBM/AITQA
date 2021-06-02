@@ -1,10 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this data will be documented in this file.
 
 ## [Unreleased]
+There is a large corpus of generated questions and additional corpus text. 
 
-## [0.0.1] - 2019-02-15
+## [1.0.0] - 2021-06-4
+
+First release version of the dataset with 515 questions and 100 tables. All baselines in the paper are derieved from this version. 
 
 ### Added
 - Added a changelog

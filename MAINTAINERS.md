@@ -1,3 +1,6 @@
 # MAINTAINERS
 
-Christopher Ferris - chrisfer@us.ibm.com
+Saneem C. - saneem@in.ibm.com
+VK
+Yannis
+Samarth Bharadwaj - samarth.b@in.ibm.com
