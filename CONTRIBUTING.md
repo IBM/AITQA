@@ -19,10 +19,14 @@ before sending a pull request so the feature can be discussed. This is to avoid
 you wasting your valuable time working on a feature that the project developers
 are not interested in accepting into the code base.
 
+In the context of the dataset, this could mean additional annotation or further improvement to label set. 
+
 ### Fixing bugs
 
 If you would like to fix a bug, please **FIXME** [raise an issue](https://github.com/ibm/repo-template/issues) before sending a
 pull request so it can be tracked.
+
+In the context of the dataset, this could be any incorrect labels or limitation to the protocol
 
 ### Merge approval
 
@@ -42,7 +46,7 @@ e.g.
 /*
 Copyright <holder> All Rights Reserved.
 
-SPDX-License-Identifier: Apache-2.0
+SPDX-License-Identifier: CDLA-Sharing-1.0
 */
 ```
 
@@ -68,17 +72,6 @@ local git repository using the following command:
 git commit -s
 ```
 
-## Communication
-**FIXME** Please feel free to connect with us on our [Slack channel](link).
-
-## Setup
-**FIXME** Please add any special setup instructions for your project to help the developer
-become productive quickly.
-
 ## Testing
-**FIXME** Please provide information that helps the developer test any changes they make
-before submitting.
 
-## Coding style guidelines
-**FIXME** Optional, but recommended: please share any specific style guidelines you might
-have for your project.
+A significant change to the annotation must be accompanied with a rerun of benchmark of TaPas, TaBERT or RCI. 
