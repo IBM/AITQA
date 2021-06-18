@@ -18,8 +18,9 @@ This repository contains the resources including data and code corresponding to 
 AIT-QA: Question Answering Dataset over Complex Tables in the Airline Industry, arxiv.org, 2021
 ```
 
-The paper is also submitted to the [NeurIPS 2021 Datasets and Benchmarks Track](https://neurips.cc/Conferences/2021/CallForDatasetsBenchmarks) and can be found on openreview [here](https://openreview.net/forum?id=cB3OdLInAr9)  
+The paper is also submitted to the [NeurIPS 2021 Datasets and Benchmarks Track](https://neurips.cc/Conferences/2021/CallForDatasetsBenchmarks) and can be found on openreview [here](https://openreview.net/forum?id=cB3OdLInAr9)   
 
+First version of the data will be relased on 18 June, 2021.
 
 
 <!-- A more detailed Usage or detailed explaination of the repository here -->
