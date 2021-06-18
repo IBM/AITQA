@@ -20,8 +20,104 @@ AIT-QA: Question Answering Dataset over Complex Tables in the Airline Industry, 
 
 The paper is also submitted to the [NeurIPS 2021 Datasets and Benchmarks Track](https://neurips.cc/Conferences/2021/CallForDatasetsBenchmarks) and can be found on openreview [here](https://openreview.net/forum?id=cB3OdLInAr9)   
 
-First version of the data will be relased on 18 June, 2021.
 
+## Content and format
+Inside the `raw_data` folder you will find `dev_questions.jsonl` and `dev_tables.jsonl`. Both files can be read line by line, where each line is a serialized JSON object.
+
+### Question, answers, table_id, and other annotations
+The instances in `dev_questions.jsonl` looks like the follwing:
+```json
+{
+  "id": "dev-0",
+  "table_id": "tab-0",
+  "question": "How much money did United spend for aircraft fuel in 2016?",
+  "answers": [
+    "$5,813"
+  ],
+  "type": "KPI-driven",
+  "row_hierarchy_needed": "No",
+  "paraphrase_group": "para-5"
+}
+```
+The fields represent the follwing:
+- `id`: The ID of this data instance.
+- `table_id`: The ID of the table to which questions is addressed.
+- `question`: The question string.
+- `answers`: A list containing answer(s) to the question.
+- `type`: The type of information the question is about. It is either `KPI-driven` (questions that inquiry about Key Performance Indicators (KPIs) in airline industry) or `Table-driven` (questions on other concepts).
+- `row_hierarchy_needed`: If finding the answer relies on the row header hierarchy.
+- `paraphrase_group`: The ID of paraphrase group. A praphrase group is set of instances with questions which are paraphrases of each other.  `''` when the question does not have any paraphrase.
+
+### Tables
+The instances in `dev_tables.jsonl` looks like the follwing:
+```json
+{  
+  "id": "tab-5",
+  "column_header": [
+    ["At December 31,", "2018"],
+    ["At December 31,", "2017 (a)"]
+  ],
+  "row_header": [
+    ["Current assets:", "Cash and cash equivalents"],
+    ["Current assets:", "Short-term investments"],
+    ["Current assets:", "Receivables, less allowance for doubtful accounts 2018—$8; 2017—$7)"],
+    ["Current assets:", "Aircraft fuel, spare parts and supplies, less obsolescence allowance (2018—$412; 2017—$354)"],
+    ["Current assets:", "Prepaid expenses and other"],
+    ["Current assets:", "Total current assets"],
+    ["Owned-", "Operating property and equipment:", "Flight equipment"],
+    ["Owned-", "Operating property and equipment:", "Other property and equipment"],
+    ["Owned-", "Operating property and equipment:", "Total owned property and equipment"],
+    ["Owned-", "Operating property and equipment:", "Less-Accumulated depreciation and amortization"],
+    ["Owned-", "Operating property and equipment:", "Total owned property and equipment, net"],
+    ["Owned-", "Operating property and equipment:", "Purchase deposits for flight equipment"],
+    ["Capital leases-", "Flight equipment"],
+    ["Capital leases-", "Other property and equipment"],
+    ["Capital leases-", "Total capital leases"],
+    ["Capital leases-", "Less-Accumulated amortization"],
+    ["Capital leases-", "Total capital leases, net"],
+    ["Capital leases-", "Total operating property and equipment, net"],
+    ["Other assets:", "Goodwill"],
+    ["Other assets:", "Intangibles, less accumulated amortization (2018-$1,380; 2017-$1,313)"],
+    ["Other assets:", "Restricted cash"],
+    ["Other assets:", "Notes receivable, net"],
+    ["Other assets:", "Investments in affiliates and other, net"],
+    ["Other assets:", "Total other assets"],
+    ["Total assets"]
+  ],
+  "data": [
+	["$1,694", "$1,482"],
+ 	["2,256", "2,316"],
+ 	["1,346", "1,340"],
+ 	["985", "924"],
+ 	["913", "1,071"],
+ 	["7,194", "7,133"],
+ 	["31,607", "28,692"],
+ 	["7,919", "6,946"],
+ 	["39,526", "35,638"],
+ 	["(12,760)", "(11,159)"],
+ 	["26,766", "24,479"],
+ 	["1,177", "1,344"],
+ 	["1,029", "1,151"],
+ 	["11", "11"],
+ 	["1,040", "1,162"],
+ 	["(654)", "(777)"],
+ 	["386", "385"],
+ 	["28,329", "26,208"],
+ 	["4,523", "4,523"],
+ 	["3,159", "3,539"],
+ 	["105", "91"],
+ 	["516", "46"],
+    ["966", "806"],
+    ["9,269", "9,005"],
+    ["$44,792", "$42,346"]
+  ]
+}
+```
+The fields represent the following:
+- `id`: The Table ID.
+- `column_header`: A list of column names in the table. Column names can be hierarchical and sublist captures the order of hierarchy.
+- `row_header`: A list of row headers in the tbale. Row headers can be hierarchical and sublist captures the order of hierarchy. 
+- `data`: A list of rows. Each row is a list of row entries.
 
 <!-- A more detailed Usage or detailed explaination of the repository here -->
 ## Notes
