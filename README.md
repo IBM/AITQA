@@ -12,17 +12,24 @@ Recent advances in transformers have enabled Table Question Answering (Table QA)
 
 ## Dataset
 
-This repository contains the resources including data and code corresponding to the paper. Please refer to the paper if you are using them as below:
+This repository contains the resources including data and code corresponding to the paper. Please consider refering to the paper draft if you are using them, as below:
 
 ```
-AIT-QA: Question Answering Dataset over Complex Tables in the Airline Industry, arxiv.org, 2021
+@misc{
+aitqaNeurips2021draft:,
+title={AIT-QA: Question Answering Dataset over Complex Tables in the Airline Industry},
+author={Yannis Katsis, Saneem Ahmed Chemmengath, Vishwajeet Kumar, Samarth Bharadwaj, Mustafa Canim, Michael Glass, Alfio Gliozzo, Feifei Pan, Jaydeep Sen, Karthik Sankaranarayanan, Soumen Chakrabarti},
+booktitle={under submission at NeurIPS 2021 Datasets and Benchmarks Track Round 1},
+year={2021},
+url={https://openreview.net/forum?id=cB3OdLInAr9}
+}
 ```
 
 The paper is also submitted to the [NeurIPS 2021 Datasets and Benchmarks Track](https://neurips.cc/Conferences/2021/CallForDatasetsBenchmarks) and can be found on openreview [here](https://openreview.net/forum?id=cB3OdLInAr9)   
 
 
 ## Content and format
-Inside the `raw_data` folder you will find `dev_questions.jsonl` and `dev_tables.jsonl`. Both files can be read line by line, where each line is a serialized JSON object.
+Inside the `raw_data` folder you will find `dev_questions.jsonl` and `dev_tables.jsonl`. Both files can be read line by line, where each line is a serialized JSON object. The test questions and tables will be released upon acceptance of the dataset paper in submission (details above).
 
 ### Question, answers, table_id, and other annotations
 The instances in `dev_questions.jsonl` looks like the follwing:
