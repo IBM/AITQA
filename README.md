@@ -16,14 +16,25 @@ This repository contains the resources including data and code corresponding to 
 
 ```
 @misc{
-aitqaNeurips2021draft:,
+aitqaNeurips2021draft,
 title={AIT-QA: Question Answering Dataset over Complex Tables in the Airline Industry},
-author={Yannis Katsis, Saneem Ahmed Chemmengath, Vishwajeet Kumar, Samarth Bharadwaj, Mustafa Canim, Michael Glass, Alfio Gliozzo, Feifei Pan, Jaydeep Sen, Karthik Sankaranarayanan, Soumen Chakrabarti},
+author={Yannis Katsis and Saneem Chemmengath and Vishwajeet Kumar and Samarth Bharadwaj and Mustafa Canim and Michael Glass and Alfio Gliozzo and Feifei Pan and Jaydeep Sen and Karthik Sankaranarayanan and Soumen Chakrabarti},
 booktitle={under submission at NeurIPS 2021 Datasets and Benchmarks Track Round 1},
 year={2021},
 url={https://openreview.net/forum?id=cB3OdLInAr9}
 }
+
+@misc{katsis2021aitqa,
+      title={AIT-QA: Question Answering Dataset over Complex Tables in the Airline Industry}, 
+      author={Yannis Katsis and Saneem Chemmengath and Vishwajeet Kumar and Samarth Bharadwaj and Mustafa Canim and Michael Glass and Alfio Gliozzo and Feifei Pan and Jaydeep Sen and Karthik Sankaranarayanan and Soumen Chakrabarti},
+      year={2021},
+      eprint={2106.12944},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
+
+
 
 The paper is also submitted to the [NeurIPS 2021 Datasets and Benchmarks Track](https://neurips.cc/Conferences/2021/CallForDatasetsBenchmarks) and can be found on openreview [here](https://openreview.net/forum?id=cB3OdLInAr9)   
 
