@@ -38,6 +38,8 @@ url={https://openreview.net/forum?id=cB3OdLInAr9}
 
 The paper is also submitted to the [NeurIPS 2021 Datasets and Benchmarks Track](https://neurips.cc/Conferences/2021/CallForDatasetsBenchmarks) and can be found on openreview [here](https://openreview.net/forum?id=cB3OdLInAr9)   
 
+Arxiv link: https://arxiv.org/abs/2106.12944
+
 
 ## Content and format
 Inside the `raw_data` folder you will find `dev_questions.jsonl` and `dev_tables.jsonl`. Both files can be read line by line, where each line is a serialized JSON object. The test questions and tables will be released upon acceptance of the dataset paper in submission (details above).
