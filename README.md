@@ -12,7 +12,7 @@
 
 ## Dataset
 
-This repository contains the resources including data and code corresponding to the paper. Please consider refering to the paper draft if you are using them, as below:
+This repository contains the data corresponding to the paper. Please consider refering to the paper draft if you are using them, as below:
 
 ```
 @misc{katsis2021aitqa,
@@ -29,13 +29,13 @@ Detailed information about this dataset and initial experiments can be found her
 
 
 ## Content and format
-Inside the `raw_data` folder you will find `dev_questions.jsonl` and `dev_tables.jsonl`. Both files can be read line by line, where each line is a serialized JSON object. The test questions and tables will be released upon acceptance of the dataset paper in submission (details above).
+Inside the `raw_data` folder you will find `aitqa_questions.jsonl` and `aitqa_tables.jsonl`. Both files can be read line by line, where each line is a serialized JSON object. The test questions and tables will be released upon acceptance of the dataset paper in submission (details above).
 
 ### Question, answers, table_id, and other annotations
-The instances in `dev_questions.jsonl` looks like the follwing:
+The instances in `aitqa_questions.jsonl` looks like the follwing:
 ```json
 {
-  "id": "dev-0",
+  "id": "q-0",
   "table_id": "tab-0",
   "question": "How much money did United spend for aircraft fuel in 2016?",
   "answers": ["$5,813"],
@@ -54,7 +54,7 @@ The fields represent the follwing:
 - `paraphrase_group`: The ID of paraphrase group. A praphrase group is set of instances with questions which are paraphrases of each other.  `''` when the question does not have any paraphrase.
 
 ### Tables
-The instances in `dev_tables.jsonl` looks like the follwing:
+The instances in `aitqa_tables.jsonl` looks like the follwing:
 ```json
 {  
   "id": "tab-5",
